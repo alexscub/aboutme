@@ -1,0 +1,37 @@
+/* basic styles from projects style-guide will be here */
+.heading1 {
+  font-family: var(--font-stack);
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #212529;
+}
+
+.heading2 {
+  font-family: var(--font-stack);
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #212529;
+}
+.paragraph {
+  font-family: var(--font-stack);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #4c4b4b;
+}
+
+@media screen and (min-width: 768px) {
+  .heading1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heading1 {
+    font-size: 50px;
+    line-height: 54px;
+  }
+}

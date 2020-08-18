@@ -1,0 +1,54 @@
+.title {
+  composes: heading1 from '../../styles/basicStyles.css';
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.galery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cardImage {
+  position: relative;
+}
+
+.cardTitle {
+  composes: heading2 from '../../styles/basicStyles.css';
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.card {
+  margin: .5rem 0 1rem 0;
+  background-color: #fff;
+  width: 320px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cardContent {
+  composes: paragraph from '../../styles/basicStyles.css';
+  line-height: normal;
+  padding: 12px 20px;
+}
+
+.card img {
+  width: 100%;
+}
+.cardActions {
+  background-color: inherit;
+  border-top: 1px solid rgba(160,160,160,0.2);
+  padding: 12px 20px;
+}
+.link {
+  composes: paragraph from '../../styles/basicStyles.css';
+  display: block;
+  text-decoration: none;
+  color: var(--primary-color);
+}

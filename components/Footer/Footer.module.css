@@ -1,0 +1,6 @@
+.footer {
+  composes: paragraph from './../../styles/basicStyles.css';
+  text-align: center;
+  border-top: 1px solid #ececec;
+  padding: 18px 15px;
+}

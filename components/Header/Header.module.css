@@ -1,0 +1,88 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid #ececec;
+}
+.logo{
+  font-family: 'Acme', sans-serif;
+  font-size: 28px;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 30px;
+  z-index: 3;
+  opacity: 1;
+}
+
+.menuWrap {
+  width: 290px;
+  height: 100%;
+  z-index: 1000;
+  overflow-y: auto;
+  background-color: #ffffff;
+  transform: translateZ(0);
+}
+
+.menuHidden {
+  composes: menuWrap;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.backdropHidden {
+  opacity: 0;
+}
+
+.backdropHidden,
+.menuWrap,
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menuWrap,
+.menuHidden {
+  transition: transform 0.3s ease;
+}
+
+.headerContainer {
+  composes: container from global;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burgerMenu {
+  display: flex;
+  align-items: center;
+  border: none;
+  font-size: 0;
+  background-color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .burgerMenu {
+    display: none;
+  }
+  .headerContainer {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .menuWrap {
+    width: auto;
+    height: auto;
+    position: static;
+  }
+  
+  .menuHidden {
+    position: static;
+    transform: translate3d(0, 0, 0);
+  }
+}

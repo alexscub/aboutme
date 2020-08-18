@@ -1,0 +1,76 @@
+.title {
+  composes: heading1 from '../../styles/basicStyles.css';
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.subtitle {
+  composes: heading2 from '../../styles/basicStyles.css';
+  text-align: center;
+  margin: 0 0 20px;
+  display: inherit;
+}
+
+.imageContainer {
+  width: 288px;
+  height: 100%;
+  margin: 0 auto 36px;
+}
+
+.sideContainer {
+  margin: 0 auto;
+}
+
+.decorationImage {
+  display: block;
+  width: 100%;
+}
+
+.paragraph {
+  composes: paragraph from '../../styles/basicStyles.css';
+  text-align: justify;
+  display: inherit;
+  margin: 0 0 24px;
+}
+.educationSection {
+  background-color: #f9f9f3;
+}
+
+@media screen and (min-width: 768px) {
+  .imageWithDescription {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .imageContainer {
+    width: 268px;
+    margin: 0;
+  }
+
+  .sideContainer {
+    margin: 0;
+    width: 500px;
+  }
+
+  .title {
+    margin-bottom: 68px;
+  }
+
+  .subtitle {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .imageContainer {
+    padding: 0 20px;
+  }
+
+  .imageContainer {
+    width: 400px;
+  }
+
+  .sideContainer {
+    width: 600px;
+  }
+}

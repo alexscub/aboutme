@@ -1,0 +1,56 @@
+.title {
+    composes: heading1 from '../../styles/basicStyles.css';
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.paragraph {
+    composes: paragraph from '../../styles/basicStyles.css';
+    text-align: center;
+    margin: 0 0 28px;
+}
+
+.contactsForm {
+    composes: paragraph from '../../styles/basicStyles.css';
+    color: #212529;
+    display: block;
+    max-width: 468px;
+    margin: 0 auto;
+}
+
+.input {
+    line-height: normal;
+    width: 100%;
+    color: #404040;
+    border: 1px solid #b2b9c0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 26px;
+}
+.textarea {
+    resize: vertical;
+}
+
+.input::placeholder {
+    color: #b2b9c0;
+}
+
+/* Input - Active */
+.input:focus {
+    border-color: rgb(128, 189, 255);
+    box-shadow: 0px 0px 2px 2px rgba(128, 189, 255, 0.5);
+}
+
+/* Input - Error - Enabled */
+.inputError:placeholder-shown {
+    border-color: rgb(219, 52, 69);
+    box-shadow: none;
+}
+
+/* Input - Error - Filled - Enabled, Input - Error - Active */
+.inputError,
+.inputError:focus {
+    border-color: rgb(219, 52, 69);
+    box-shadow: 0px 0px 2px 2px rgba(219, 52, 69, 0.5);
+}

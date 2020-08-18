@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local('OpenSans'),
+    url('../public/assets/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acme';
+  src: local('Acme'),
+    url('../public/assets/fonts/Acme/Acme-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

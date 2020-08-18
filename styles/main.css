@@ -1,0 +1,49 @@
+/* @import './fonts.css';
+@import './vars.css';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+​img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+.container {
+  width: 100%;
+  padding: 74px 15px;
+  margin: 0 auto;
+}
+
+.activeClass {
+  color: #1b4a8a;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 112px 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1170px;
+    padding: 148px 30px;
+  }
+} */

@@ -1,0 +1,17 @@
+.button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  color: var(--primary-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  display: block;
+  margin: inherit;
+  min-height: 38px;
+}
+.button:hover,
+.button:focus {
+  color: #d24335;
+}
