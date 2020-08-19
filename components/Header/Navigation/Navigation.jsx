@@ -47,7 +47,7 @@ const Navigation = ({ close }) => {
   return (
     <>
       <div className={styles.logoContainer}>
-      <div className={styles.logo}>AlexScub</div>
+      <div className={styles.logo}>{"<AlexScub/>"}</div>
       </div>
       <nav>{mobileNavItems}</nav>
     </>

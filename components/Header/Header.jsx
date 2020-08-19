@@ -27,7 +27,7 @@ class Header extends Component {
       <>
         <header className={styles.header}>
           <div className={styles.headerContainer}>
-          <div className={styles.logo}>AlexScub</div>
+          <div className={styles.logo}>{"<AlexScub/>"}</div>
               <>
                 <button
                   type="button"
