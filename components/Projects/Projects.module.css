@@ -11,16 +11,18 @@
 }
 .cardImage {
   position: relative;
+  height: 230px;
+  overflow: hidden;
 }
 
 .cardTitle {
   composes: heading2 from '../../styles/basicStyles.css';
-  color: #fff;
   position: absolute;
   bottom: 0;
   left: 0;
   max-width: 100%;
   padding: 20px;
+  color: #4c4b4b;
 }
 
 .card {

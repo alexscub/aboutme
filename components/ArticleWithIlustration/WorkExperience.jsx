@@ -23,7 +23,7 @@ const WorkExperience = ({ id, CTA }) => {
             <p className={styles.paragraph}>
             Long time I worked with developers on the customer side(as Content Manager/Technical support of site with more than 100 000 goods - electronic components). Everything is not as we would like, the developers are not doing what is needed. And once I decided to become the developer, and end Full-stack course in GoIT academy.
             </p>
-            <FlatButton onClick={CTA} label="Sign up now" />
+            <FlatButton onClick={CTA} label="Contact with me" />
           </div>
         </div>
       </div>

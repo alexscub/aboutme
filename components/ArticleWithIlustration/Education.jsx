@@ -23,7 +23,7 @@ const Education = ({ id, CTA }) => {
             <p className={styles.paragraph}>
             Full Stack Development courses 2019 - 2020
             </p>
-            <FlatButton onClick={CTA} label="Sign up now" />
+            <FlatButton onClick={CTA} label="Contact with me" />
           </div>
           </ScrollAnimation>
           

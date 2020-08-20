@@ -18,7 +18,6 @@ export default function Home() {
     scroller.scrollTo('contacts', {
       duration: 500,
       smooth: true,
-      offset: 50,
     });
   };
   return (
