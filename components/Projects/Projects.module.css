@@ -21,8 +21,10 @@
   bottom: 0;
   left: 0;
   max-width: 100%;
-  padding: 20px;
+  padding: 6px 10px;
   color: #4c4b4b;
+  background-color:rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
 
 .card {

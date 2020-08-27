@@ -3,11 +3,15 @@ import axios from 'axios';
 import styles from './Contacts.module.css'
 import Button from '../Shared/Button/Button'
 import Modal from "../Shared/Modal/Modal"
+import HashLoader from "react-spinners/HashLoader";
+import { css } from "@emotion/core";
+
 const Contacts = ({ id }) => {
     const initialInputState = { email: "", name: "", message: "" };
     const [eachEntry, setEachEntry] = useState(initialInputState);
     const [isModalOpened, setOpenModal] = useState(false);
     const [isMessageSent, setMessageSent] = useState(false);
+    const [isMessageSending, setMessageSending] = useState(false);
     const closeModal = () => setOpenModal(false);
     const { email, name, message } = eachEntry;
     console.log(email, name, message)
@@ -16,11 +20,13 @@ const Contacts = ({ id }) => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        setMessageSending(true);
         axios.post('/api/sendmesage', eachEntry)
             .then(data => {
                 setMessageSent(true);
                 setOpenModal(true);
                 setEachEntry(initialInputState)
+                setMessageSending(false)
             })
             .catch(err => console.log(err))
     }
@@ -74,10 +80,20 @@ const Contacts = ({ id }) => {
                         >
                         </textarea>
                     </div>
-                    <Button type="submit" label="Send message" />
+
+                    {!isMessageSending && <Button type="submit" label="Send message" />}
                 </form>
+                <div className="spinnerWrapper"><HashLoader
+                    css={css`
+          display: block;
+          margin: 0 auto;
+        `}
+                    size={100}
+                    color={"#123abc"}
+                    loading={isMessageSending} />
+                </div>
             </div>
-        </section>
+        </section >
     )
 }
 
