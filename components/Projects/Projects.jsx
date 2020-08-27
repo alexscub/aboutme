@@ -9,7 +9,7 @@ const Projects = ({id}) => {
         <div className={styles.galery}>
         <div className={styles.card}>
             <div className={styles.cardImage}>
-            <img src="/assets/images/wallet-2x.jpg"/>
+            <img src="/assets/images/wallet-2x.jpg" alt="wallet work"/>
             <h3 className={styles.cardTitle}>Wallet app</h3>
             </div>
             <p className={styles.cardContent}> Single page React application for budget planning and managing expenses and incomes. All transactions saves to back-end. Developed in team, using scrum methodology. Used Redux for state managment.</p>
@@ -20,7 +20,7 @@ const Projects = ({id}) => {
         </div>
         <div className={styles.card}>
             <div className={styles.cardImage}>
-            <img src="/assets/images/aboutme-2x.jpg"/>
+            <img src="/assets/images/aboutme-2x.jpg" alt="about me work"/>
             <h3 className={styles.cardTitle}>About me app</h3>
             </div>
             <p className={styles.cardContent}>Small Next-js application-CV , in which you can easy read my CV and send me messages. I used Node-mailer for sending e-mail from website. Personal auth-data stored in environment.</p>
@@ -31,7 +31,7 @@ const Projects = ({id}) => {
         </div>
         <div className={styles.card}>
             <div className={styles.cardImage}>
-            <img src="/assets/images/imradapp-2x.jpg"/>
+            <img src="/assets/images/imradapp-2x.jpg" alt="imrad work"/>
             <h3 className={styles.cardTitle}>Imrad-buyer app</h3>
             </div>
             <p className={styles.cardContent}>Small application for buyers department, which get stock from global supplier thru API and calculates current price. <br/>I used Next js api ability and store api key in environment for security.</p>
