@@ -31,7 +31,7 @@ export default function Home() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
         <meta name="msapplication-TileColor" content="#da532c"/>
         <meta name="theme-color" content="#ffffff"/>
-        <meta name="description" content="Oleksandr Skubachevskyi - maybe the best React-JS developer now for 800$/month in Kyiv"/>
+        <meta name="description" content="Oleksandr Skubachevskyi - maybe the best React-JS developer in Kyiv"/>
       </Head>
       <Header/>
       <main >
