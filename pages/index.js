@@ -32,6 +32,7 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c"/>
         <meta name="theme-color" content="#ffffff"/>
         <meta name="description" content="Oleksandr Skubachevskyi - maybe the best React-JS developer in Kyiv"/>
+        <meta name="google-site-verification" content="odBngxK6oEpCIjVp_ouOuP6S15nTvA6USplNetZMxNY" />
       </Head>
       <Header/>
       <main >
