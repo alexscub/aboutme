@@ -63,7 +63,7 @@ const Projects = ({ id }) => {
                     <div className={styles.card}>
                         <div className={styles.cardImage}>
                             <img src="/assets/images/arch.jpg" alt="TheFOLB work" />
-                            <h3 className={styles.cardTitle}>TheFOLB landing-page</h3>
+                            <h3 className={styles.cardTitle}>Archprojectgroup site-portfolio</h3>
                         </div>
                         <p className={styles.cardContent}>Site-portfolio for architects-studio. Front-end development using stylus, vanilla js, and CSS - animations.</p>
                         <div className={styles.cardActions}>
