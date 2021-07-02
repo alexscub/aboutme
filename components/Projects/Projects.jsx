@@ -57,7 +57,17 @@ const Projects = ({ id }) => {
                         </div>
                         <p className={styles.cardContent}>Landing-page for web-studio. Front-end development using stylus, vanilla js, and CSS - animations. I develop similar series of such landings for diferent marketing strategies.</p>
                         <div className={styles.cardActions}>
-                            <a className={styles.link} href="https://dev.thefolb.com/" target="blanc">Link to website</a>
+                            <a className={styles.link} href="https://thefolb.com/" target="blanc">Link to website</a>
+                        </div>
+                    </div>
+                    <div className={styles.card}>
+                        <div className={styles.cardImage}>
+                            <img src="/assets/images/arch.jpg" alt="TheFOLB work" />
+                            <h3 className={styles.cardTitle}>TheFOLB landing-page</h3>
+                        </div>
+                        <p className={styles.cardContent}>Site-portfolio for architects-studio. Front-end development using stylus, vanilla js, and CSS - animations.</p>
+                        <div className={styles.cardActions}>
+                            <a className={styles.link} href="https://archprojectgroup.com/" target="blanc">Link to website</a>
                         </div>
                     </div>
 
